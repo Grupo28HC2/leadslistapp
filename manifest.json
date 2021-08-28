@@ -1,8 +1,8 @@
 {
   "vendor": "vtex",
   "name": "leadslist",
-  "version": "0.0.1",
-  "title":"Leads List",
+  "version": "1.0.0-beta.0",
+  "title": "Leads List",
   "description": "Leads list component",
   "defaultLocale": "pt-BR",
   "builders": {
