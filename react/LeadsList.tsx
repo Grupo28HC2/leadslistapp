@@ -56,7 +56,6 @@ const LeadsList: StorefrontFunctionComponent<LeadsList> = ({}) => {
             <table className={`${handles.tableContainer} f6 mb5 w-100 center`}>
               <thead className={handles.tableHead}>
                 <tr className={`${handles.tableHeadRow} stripe-dark`}>
-                <th className={`${handles.tableHeadDiv} fw6 tl bb b--black-20 pt2 bg-white`}>id</th>
                 <th className={`${handles.tableHeadDiv} fw6 tl bb b--black-20 pt2 bg-white`}>Nome</th>
                 <th className={`${handles.tableHeadDiv} fw6 tl bb b--black-20 pt2 bg-white`}>E-mail</th>
                 <th className={`${handles.tableHeadDiv} fw6 tl bb b--black-20 pt2 bg-white`}>Telefone</th>
@@ -69,7 +68,6 @@ const LeadsList: StorefrontFunctionComponent<LeadsList> = ({}) => {
               {leads.length > 0 ?
                 leads.map(lead => (
                   <tr className={`${handles.tableBodyRow}`}  key={lead.email}>
-                    <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.id}</td>
                     <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.name}</td>
                     <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.email}</td>
                     <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.telephone}</td>
