@@ -35,7 +35,7 @@ const LeadsList: StorefrontFunctionComponent<LeadsList> = ({}) => {
 
     setLeads(response.data.prospectos)
     
-    //console.log(response.data.prospectos)
+    console.log(response.data.prospectos)
   }
 
   useEffect( () => {
@@ -71,8 +71,8 @@ const LeadsList: StorefrontFunctionComponent<LeadsList> = ({}) => {
                     <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.name}</td>
                     <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.email}</td>
                     <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.telephone}</td>
-                    <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.prospect_date === '' ? '-': lead.prospect_date}</td>
-                    <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.customer_date === '' ? '-': lead.customer_date}</td>
+                    <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.prospect_date === '' ? '-': lead.prospect_date?.split('/').reverse().join('/')}</td>
+                    <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.customer_date === '' ? '-': lead.prospect_date?.split('/').reverse().join('/')}</td>
                   </tr>
                 )) : ''}
               </tbody>
