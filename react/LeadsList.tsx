@@ -35,7 +35,6 @@ const LeadsList: StorefrontFunctionComponent<LeadsList> = ({}) => {
 
     setLeads(response.data.prospectos)
     
-    console.log(response.data.prospectos)
   }
 
   useEffect( () => {
