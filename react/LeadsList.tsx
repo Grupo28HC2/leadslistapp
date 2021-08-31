@@ -71,7 +71,7 @@ const LeadsList: StorefrontFunctionComponent<LeadsList> = ({}) => {
                     <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.email}</td>
                     <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.telephone}</td>
                     <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.prospect_date === '' ? '-': lead.prospect_date?.split('/').reverse().join('/')}</td>
-                    <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.customer_date === '' ? '-': lead.prospect_date?.split('/').reverse().join('/')}</td>
+                    <td className={`${handles.tableBodyDiv} tl bb b--black-20 pt2`}>{lead.customer_date === '' ? '-': lead.customer_date?.split('/').reverse().join('/')}</td>
                   </tr>
                 )) : ''}
               </tbody>
